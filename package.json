@@ -1,6 +1,7 @@
 {
   "scripts": {
     "build": "bash ./scripts/build.sh",
+    "build:gfw": "wasm-pack build --target bundler --no-default-features --features arrow2 --features snappy --features reader",
     "build:test": "ENV='DEV' yarn build",
     "docs:build": "typedoc",
     "docs:publish": "gh-pages -d docs_build",
